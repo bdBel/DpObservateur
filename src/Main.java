@@ -16,7 +16,7 @@ public class Main {
        // p1.detach(s2); exemplesi s2 pas notifié
         //le p1 va notifier les autres avec un messagee
         p1.notifyUpdate(new Message("premier message"));
-        //le s2 s'inscrit au flux de message, au publisher p1
+        //le s2 s'inscrit au flux de message
         //observable c une liste des observers
         System.out.println("nb observateurs - "+p1.getNumObservers());
         p1_1.attach(s2);
